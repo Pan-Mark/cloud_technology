@@ -1,3 +1,7 @@
+html{
+    background: url(images/tokyo.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
 body{
     margin: 0;
 }
@@ -10,7 +14,7 @@ nav.navbar{
 }
 a.nav, .buy{
     color: midnightblue;
-    font-size: 1.8em;
+    font-size: 1.3em;
     padding-bottom: 10px;
     text-decoration: none;
     font-family: verdana;
@@ -22,35 +26,69 @@ a.nav, .buy{
 a.buy{
     background-color: gold;
     border-radius: 15px;
+    transition: 250ms;
+    padding-left: 3px;
+    padding-right: 3px
+}
+a.buy:hover{
+    background-color: gray;
+    color: whitesmoke;
 }
 a.nav:hover{
-    color: whitesmoke;
+    color: red;
     text-decoration: underline;
 }
-img.background{
+section.bigimg{
     width: 100%;
-    position: relative;
-    filter: brightness(55%);
+    height: 750px;
+    display: flex;
 }
-p.title{
+div.texts{
     position: absolute;
-    bottom: 55%;
-    top: 20%;
-    left: 35%;
-    right: 35%;
-    font-size: 6em;
     text-align: center;
     color: aliceblue;
     font-family: verdana;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+div.gradient{
+    background-color: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    height: 750px;
+    width: 100%;
+}
+p.title{
+    font-size: 6em;
 }
 p.desc{
     position: absolute;
-    bottom: 55%;
-    top: 40.5%;
-    left: 35%;
-    right: 35%;
     font-size: 1.5em;
+    top: 62%;
+    left: 9%;
+}
+section.infocontainer{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    background-color: whitesmoke;
+    padding-top: 50px;
+}
+div.infoleft, div.inforight{
+    width: 49%;
     text-align: center;
-    color: aliceblue;
+    border-radius: 10px;
+    overflow: hidden;
+}
+h1.areaname{
+    font-size: 2.5em;
     font-family: verdana;
+}
+p.data{
+    font-size: 1.5em;
+}
+img{
+    display: block;
+    width: 100%;
+    height: 100%;
 }
