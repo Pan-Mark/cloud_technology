@@ -39,6 +39,7 @@ a.buy:hover{
     background-color: gray;
     color: whitesmoke;
     box-shadow: none;
+    transform: scale(0.95);
 }
 a.nav:hover{
     color: red;
@@ -77,20 +78,23 @@ section.infocontainer{
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    flex-direction: row;
     background-color: whitesmoke;
     padding-top: 50px;
-    padding: 5%;
+    width: 100%;
 }
 div.infoleft, div.inforight{
-    width: 38%;
+    width: 550px;
     text-align: center;
     border-radius: 10px;
     overflow: hidden;
-    position: relative;
     transition: 250ms;
 }
+div.inforight{
+    padding-top: 10%;
+}
 div.infoleft:hover{
-    width: 38.2%;
+    transform: scale(1.01);
     filter: blur(3px);
 }
 h1.areaname{
@@ -106,8 +110,10 @@ img{
     height: 100%;
 }
 div.book{
-    padding-left: 6%;
+    padding-left: 38%;
     padding-top: 10%;
+    padding-bottom: 10%;
+    display: flex;
 }
 ul.list{
     width: 100%;
@@ -135,13 +141,37 @@ footer.contact{
     flex-direction: row;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    padding-top: 50px;
+    padding-top: 25px;
     padding-bottom: 50px;
 }
 div.footinfo{
-    margin: 1em;
-    width: 400px;
-    height: 250px;
-    border: solid;
-    border-color: red;
+    width: 420px;
+    height: 200px;
+}
+h1.foottitle{
+    color: whitesmoke;
+    font-family: Verdana;
+    font-size: 1.5em;
+}
+.footlist{
+    font-size: 1.3em;
+    font-family: verdana;
+    color: gray;
+    text-decoration: none;
+    padding-bottom: 4px;
+    transition: 250ms;
+    margin: 0;
+}
+a.footlist:hover{
+    padding-left: 7px;
+}
+footer.credit{
+    width: 100%;
+    text-align: center;
+    background-color: wheat;
+}
+p.credittxt{
+    font-size: 1.3em;
+    font-family: verdana;
+    margin: 0;
 }
