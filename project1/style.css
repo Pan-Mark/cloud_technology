@@ -12,6 +12,12 @@ nav.navbar{
     display: flex;
     justify-content: right;
 }
+a.logo{
+    height: 70px;
+    position: absolute;
+    left: 0px;
+    top: 1px;
+}
 a.nav, .buy{
     color: midnightblue;
     font-size: 1.3em;
@@ -20,12 +26,8 @@ a.nav, .buy{
     font-family: verdana;
     margin-right: 5%;
     padding-top: 10px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-}
-a.cur{
-    color: red;
-    text-decoration: underline;
+    margin-top: 12px;
+    margin-bottom: 12px;
 }
 a.buy{
     background-color: gold;
@@ -35,13 +37,13 @@ a.buy{
     padding-right: 3px;
     box-shadow: -2px 2px 10px 0.5px gray ;
 }
-a.buy:hover{
+a.buy:hover, a.bookp{
     background-color: gray;
     color: whitesmoke;
     box-shadow: none;
     transform: scale(0.95);
 }
-a.nav:hover{
+a.nav:hover, a.cur{
     color: red;
     text-decoration: underline;
 }
@@ -67,12 +69,24 @@ div.gradient{
 }
 p.title{
     font-size: 6em;
+    font-weight: bold;
+    margin-bottom: 0;
+    animation: glow 2s ease-in-out infinite alternate;
+}
+@keyframes glow{
+    from{text-shadow: 0 0 20px skyblue;}
+    to{text-shadow: 0 0 30px blue;}
 }
 p.desc{
     position: absolute;
     font-size: 1.5em;
-    top: 62%;
+    top: 89%;
     left: 9%;
+    animation: colorchange 3s ease-in-out infinite alternate;
+}
+@keyframes colorchange{
+    from{color: whitesmoke;}
+    to{color: crimson;}
 }
 section.infocontainer{
     display: flex;
@@ -103,6 +117,9 @@ h1.areaname{
 }
 p.data{
     font-size: 1.5em;
+    text-align: left;
+    font-family: verdana;
+    color: gray;
 }
 img{
     display: block;
@@ -174,4 +191,93 @@ p.credittxt{
     font-size: 1.3em;
     font-family: verdana;
     margin: 0;
+}
+div.infocard{
+    width: 350px;
+    text-align: center;
+    height: 400px;
+    padding: 5px;
+}
+h2.infotitle{
+    font-family: verdana;
+    color: tomato;
+    font-size: 1.7em;
+}
+div.booking{
+    width: 300px;
+    height: 450px;
+    border-radius: 15px;
+    transition: 250ms;
+    border: solid rgb(145, 145, 145);
+    overflow: hidden;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+div.booking:hover{
+    transform: scale(1.01);
+    box-shadow: -2px 2px 10px 0.5px gray ;
+}
+img.bookimg{
+    width: 100%;
+    height: 225px;
+}
+img.bookimg:hover{
+    filter: brightness(0.6);
+}
+h3.booktitle{
+    font-family: verdana;
+    color: orangered;
+    font-size: 1.6em;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+p.bookdesc{
+    font-family: verdana;
+    color: gray;
+    font-size: 1.2em;
+    margin-left: 5px;
+    margin-right: 5px;
+    text-align: left;
+    margin-bottom: 15px;
+}
+p.price{
+    font-family: verdana;
+    font-size: 1.5em;
+    color: crimson;
+    font-weight: bold;
+    margin-top: 5px;
+    display: inline;
+}
+p.old{
+    text-decoration: line-through;
+    font-size: 1.3em;
+    color: slategrey;
+    font-family: verdana;
+    display: inline;
+}
+p.disc{
+    color: gray;
+    font-size: 1.2em;
+    text-align: center;
+    margin-top: 0px;
+    font-family: verdana;
+}
+table.table{
+    border: 1px solid whitesmoke;
+    font-family: verdana;
+    text-align: center;
+    font-size: 2em;
+    background-color: whitesmoke;
+    color: gray;
+    padding-bottom: 30px;
+}
+.tabletitle{
+    background-color: tomato;
+    color: whitesmoke;
+    font-weight: bold;
+}
+td{
+    width: 300px;
+    height: 10px;
 }
