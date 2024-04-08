@@ -1,0 +1,14 @@
+*{box-sizing: border-box;}
+html{scroll-behavior: smooth;}
+:root{
+    --primarycolor: rgb(254, 203, 72);
+    --primarydark: rgb(112, 75, 145);
+    --primarylight: rgb(217, 185, 248);
+}
+
+h1{
+    background-color: var(--primarylight);
+    text-align: center;
+    padding: 1em;
+    color: var(--primarycolor);
+}
