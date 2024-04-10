@@ -1,14 +1,61 @@
 *{box-sizing: border-box;}
 html{scroll-behavior: smooth;}
 :root{
-    --primarycolor: rgb(0, 255, 190);
-    --primarydark: rgb(255, 190, 0);
-    --primarylight: rgb(190, 0, 255);
+    --primarycolor: rgb(174, 63, 113);
+    --primarydark: rgb(30, 39, 97);
+    --primarylight: rgb(160, 202, 233);
 }
-
-h1{
-    background-color: var(--primarylight);
-    text-align: center;
-    padding: 1em;
+nav.navibar{
+    background-color: var(--primarydark);
+}
+a.navi{
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    text-decoration: none;
     color: var(--primarycolor);
+    transition: 400ms;
+}
+a.navi:hover{
+    text-decoration: underline;
+    color: var(--primarylight);
+}
+div.links{
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    text-align: center;
+    padding-left: 13em;
+    font-size: 1.8em;
+}
+h1{
+    text-align: left;
+    padding-left: 1em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    font-size: 2em;
+    margin: 0;
+    color: var(--primarycolor);
+}
+div.filter{
+    width: 100%;
+    height: 780px;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+div.bar{
+    background-color: var(--primarylight);
+    height: 200px;
+    position: relative;
+    margin-top: 50%;
+}
+div.bigtext{
+    top: 38%;
+    left: 10%;
+    right: 10%;
+    bottom: 60%;
+    text-align: center;
+    color: var(--primarylight);
+}
+h2.text{
+    font-size: 2em;
+    font-family: serif;
 }
