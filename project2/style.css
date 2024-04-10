@@ -23,7 +23,6 @@ div.links{
     padding-top: 0.5em;
     padding-bottom: 0.5em;
     text-align: center;
-    padding-left: 13em;
     font-size: 1.8em;
 }
 h1{
@@ -37,25 +36,26 @@ h1{
 }
 div.filter{
     width: 100%;
-    height: 780px;
+    height: 1100px;
     position: absolute;
     background-color: rgba(0, 0, 0, 0.6);
 }
 div.bar{
     background-color: var(--primarylight);
-    height: 200px;
     position: relative;
     margin-top: 50%;
 }
 div.bigtext{
-    top: 38%;
     left: 10%;
     right: 10%;
-    bottom: 60%;
+    top: 34%;
     text-align: center;
     color: var(--primarylight);
 }
 h2.text{
     font-size: 2em;
     font-family: serif;
+}
+div.card{
+    padding: 0;
 }
