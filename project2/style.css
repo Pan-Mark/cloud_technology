@@ -1,9 +1,16 @@
 *{box-sizing: border-box;}
-html{scroll-behavior: smooth;}
+html{
+    scroll-behavior: smooth;
+}
 :root{
     --primarycolor: rgb(174, 63, 113);
     --primarydark: rgb(30, 39, 97);
     --primarylight: rgb(160, 202, 233);
+}
+header.bimg{
+    width: 100%;
+    height: 10vh;
+    display: flex;
 }
 nav.navibar{
     background-color: var(--primarydark);
@@ -34,26 +41,21 @@ h1{
     margin: 0;
     color: var(--primarycolor);
 }
-div.filter{
-    width: 100%;
-    height: 1100px;
-    position: absolute;
-    background-color: rgba(0, 0, 0, 0.6);
-}
 div.bar{
     background-color: var(--primarylight);
     position: relative;
-    margin-top: 50%;
+    margin-top: 80vh;
 }
 div.bigtext{
-    left: 10%;
-    right: 10%;
-    top: 34%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
     text-align: center;
     color: var(--primarylight);
 }
 h2.text{
-    font-size: 2em;
+    font-size: 3em;
     font-family: serif;
 }
 div.card{
