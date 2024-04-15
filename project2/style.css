@@ -9,8 +9,6 @@ html{
 }
 header.bimg{
     width: 100%;
-    height: 10vh;
-    display: flex;
 }
 nav.navibar{
     background-color: var(--primarydark);
@@ -22,10 +20,11 @@ a.navi{
     color: var(--primarycolor);
     transition: 400ms;
 }
-a.navi:hover{
+a.navi:hover, a.cur{
     text-decoration: underline;
     color: var(--primarylight);
 }
+
 div.links{
     padding-top: 0.5em;
     padding-bottom: 0.5em;
@@ -44,7 +43,6 @@ h1{
 div.bar{
     background-color: var(--primarylight);
     position: relative;
-    margin-top: 80vh;
 }
 div.bigtext{
     left: 50%;
