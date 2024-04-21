@@ -13,12 +13,13 @@ header.bimg{
 nav.navibar{
     background-color: var(--primarydark);
 }
-a.navi{
+a.navi, h3.titles{
     padding-left: 0.5em;
     padding-right: 0.5em;
     text-decoration: none;
     color: var(--primarycolor);
     transition: 400ms;
+    font-size: 1.8em;
 }
 a.navi:hover, a.cur{
     text-decoration: underline;
@@ -29,7 +30,6 @@ div.links{
     padding-top: 0.5em;
     padding-bottom: 0.5em;
     text-align: center;
-    font-size: 1.8em;
 }
 h1{
     text-align: left;
@@ -106,4 +106,13 @@ a.footi{
 }
 a.footi:hover{
     padding-left: 7px;
+}
+div.signup{
+    width: 30%;
+    height: auto;
+    margin-top: 10%;
+    border: solid;
+    border-radius: 1em;
+    text-align: center;
+    border-color: var(--primarycolor);
 }
