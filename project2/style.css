@@ -25,24 +25,14 @@ a.navi:hover, a.cur{
     text-decoration: underline;
     color: var(--primarylight);
 }
-
-div.links{
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
-    text-align: center;
-}
 h1{
     text-align: left;
     padding-left: 1em;
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
+    padding-top: 0.30em;
     font-size: 2em;
     margin: 0;
     color: var(--primarycolor);
-}
-div.bar{
-    background-color: var(--primarylight);
-    position: relative;
+    transition: 400ms;
 }
 div.bigtext{
     left: 50%;
@@ -51,6 +41,54 @@ div.bigtext{
     position: absolute;
     text-align: center;
     color: var(--primarylight);
+    transition: 400ms;
+}
+div.links{
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    text-align: center;
+    margin-left: 4em;
+}
+button.offlinks{
+    display: none;
+}
+@media only screen and (max-width:1050px){
+    a.navi{
+        font-size: 1em;
+    }
+    h1{
+        font-size: 1.5em;
+        padding-top: 0.25em;
+    }
+    div.bigtext{
+        top: 40%;
+        font-size: 0.75em;
+    }
+}
+@media only screen and (max-width:710px){
+    div.bigtext{
+        top: 30%;
+        font-size: 0.5em;
+    }
+    div.links{
+        display: none;
+    }
+    nav.navibar{
+        height: 40px;
+    }
+    button.offlinks{
+        display: block;
+    }
+}
+@media only screen and (max-width:400px){
+    div.bigtext{
+        top: 23%;
+        font-size: 0.3em;
+    }
+}
+div.bar{
+    background-color: var(--primarylight);
+    position: relative;
 }
 h2.text{
     font-size: 3em;

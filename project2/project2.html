@@ -16,7 +16,27 @@
             <a href="solid.html" class="navi">Solids</a>
             <a href="non-m-solid.html" class="navi">Non-metal Solids</a>
         </div>
-        <a href="signup.html" class="navi position-absolute end-0 mt-1">Sign Up</a>
+        <div class="position-absolute end-0" style="margin-right: 60px; padding-top: 0.1em;">
+            <button class="btn offlinks pt-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" role="button" aria-controls="offcanvasNavbar">
+                <img src="images/hamburger.svg" style="filter: invert(40%); border: solid; border-radius: 0.5em;">
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Alchements</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="project2.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link text-secondary" href="liquid.html">Liquids</a></li>
+                        <li class="nav-item"><a class="nav-link text-secondary" href="gas.html">Gasses</a></li>
+                        <li class="nav-item"><a class="nav-link text-secondary" href="solid.html">Solids</a></li>
+                        <li class="nav-item"><a class="nav-link text-secondary" href="non-m-solid.html">Non-metal Solids</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <a href="signup.html" class="navi mt-2 position-absolute end-0">Sign Up</a>
     </nav>
     <header class="bimg">
         <img src="images/periodic-table.jpg" class="w-100" style="filter: brightness(0.4);">
