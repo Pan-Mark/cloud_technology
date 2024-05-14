@@ -7,38 +7,119 @@
         <link rel="stylesheet" href="style.css">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     </head>
-    <body>
+    <body style="background-color: rgb(41, 50, 141);">
         <img src="images/binary_wallpaper.gif" class="bimage" style="width: 100%; filter: brightness(0.6);">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
             <a href="project3.html" style="text-decoration: none;"><h1 class="h2 position-absolute text-warning" style="left: 5%; top: 3%; font-size: 2.1em;">Mark pan</h1></a>
             <div class="links position-absolute" style="top: 1%; right: 1%;">
-                <a class="navlinks" href="academics.html">Academics</a>
-                <a class="navlinks" href="" style="text-decoration: line-through;">Hobbies</a>
-                <a class="navlinks" href="projects.html">Projects</a>
-                <a class="navlinks" href="" style="text-decoration: line-through;">Contacts</a>
-                <a class="navlinks" href="skills.html">Skills</a>
+                <a class="navlinks" href="#academics">Academics</a>
+                <a class="navlinks" href="#hobbies">Hobbies</a>
+                <a class="navlinks" href="#projects">Projects</a>
+                <a class="navlinks" href="#Contacts">Contacts</a>
+                <a class="navlinks" href="#skills">Skills</a>
             </div>
             <div class="position-absolute" style="top: 1%; right: 1%;">
                 <button class="btn offlinks pt-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" role="button" aria-controls="offcanvasNavbar">
                     <img src="images/hamburger.svg" style="filter: invert(40%); border: solid; border-radius: 0.5em;">
                 </button>
-                <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas offcanvas-end text-bg-primary" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                     <div class="offcanvas-header">
                         <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Mark Pan</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
                     <div class="offcanvas-body">
                         <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                            <li class="nav-item"><a class="nav-link active" aria-current="page" href="project3.html">Home</a></li>
-                            <li class="nav-item"><a class="nav-link text-secondary" href="academics.html">Academics</a></li>
-                            <li class="nav-item"><a class="nav-link text-secondary" href="">Hobbies</a></li>
-                            <li class="nav-item"><a class="nav-link text-secondary" href="projects.html">Projects</a></li>
-                            <li class="nav-item"><a class="nav-link text-secondary" href="skills.html">Skills</a></li>
+                            <li class="nav-item"><a class="nav-link text-warning" aria-current="page" href="project3.html">Home</a></li>
+                            <li class="nav-item"><a class="nav-link text-warning" href="#academics">Academics</a></li>
+                            <li class="nav-item"><a class="nav-link text-warning" href="#hobbies">Hobbies</a></li>
+                            <li class="nav-item"><a class="nav-link text-warning" href="#projects">Projects</a></li>
+                            <li class="nav-item"><a class="nav-link text-warning" href="#skills">Skills</a></li>
                         </ul>
                     </div>
                 </div>
             </div>
-        <h1 class="position-absolute text-light text-center titles">The<br>About Me<br>Page</h1>
-        <h3 class="bg-primary p-3" style="height: 100px;">Test</h3>
+        <h1 class="position-absolute text-light text-center titles">About Me<br>Page</h1>
+        <div class="content" id="academics">
+            <h1 class="text-warning">My Academics</h1>
+            <h2>I am a computer science major, studying for my associates degree at Queens Borough Community College.<br>I am currently taking classes on Python and Html/Css/Bootstrap.<br>I plan to take a job to do with coding in the future.</h2>
+        </div>
+        <div class="content" id="hobbies">
+            <h1 class="text-warning">My Hobbies</h1>
+            <h2>I like playing video games and browsing youtube during my free time. <span><br></span>I also like to watch and read Anime and Manga too.</h2>
+        </div>
+        <div class="content" id="skills">
+            <h1 class="text-warning">My Skillls</h1>
+            <h2>I know how to use HTML, CSS, and Bootstrap together to make a good website.</h2>
+            <h2>I have experience working with customer service at my parrent's work place.</h2>
+        </div>
+        <div class="row align-items-center text-center justify-content-center pt-5">
+            <div class="col-lg-3 col-sm-8 card m-3 skillcards" style="height: 27rem;">
+                <img src="images/activity-9.png" class="card-img-top img-fluid">
+                <div class="card-body">
+                    <h3 class="card-title">Activity 9</h3>
+                    <p class="card-text">An activity testing and showing how I can create responsive elements for a website.</p>
+                    <a href="https://mark-pan10.github.io/cloud_technology/responsive/responsive.html" target="_blank" rel="noopener noreferrer" class="card-link btn btn-primary m-3 stretched-link">View Page</a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-8 card m-3 skillcards" style="height: 27rem;">
+                <img src="images/slideshow.png" class="card-img-top img-fluid">
+                <div class="card-body">
+                    <h3 class="card-title">Activity 13</h3>
+                    <p class="card-text">An activity showing how I can use bootstrap to create an slideshow for a website.</p>
+                    <a href="https://mark-pan10.github.io/cloud_technology/carousels/carousels.html" target="_blank" rel="noopener noreferrer" class="card-link btn btn-primary m-3 stretched-link">View Page</a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-8 card m-3 skillcards" style="height: 27rem;">
+                <img src="images/modal.png" class="card-img-top img-fluid">
+                <div class="card-body">
+                    <h3 class="card-title">Activity 15</h3>
+                    <p class="card-text">An activity showing how I can use bootstrap to create an modal window for a website.</p>
+                    <a href="https://mark-pan10.github.io/cloud_technology/modal/modal.html" target="_blank" rel="noopener noreferrer" class="card-link btn btn-primary m-3 stretched-link">View Page</a>
+                </div>
+            </div>
+        </div>
+        <div class="content" id="projects">
+            <h1 class="text-warning">My Projects</h1>
+            <h2>These are some projects I have worked on for class. <span><br></span>These shows some of what I am capable of when it comes to creating websites. <span><br></span>These websites are for educational purposes only, Items on the sites are not actually for sale.</h2>
+        </div>
+        <div class="row align-items-center text-center justify-content-center pt-5">
+            <div class="col-lg-3 col-sm-8 card m-3" style="height: 27rem; width: 420px;">
+                <img src="images/Tokyo.png" class="card-img-top img-fluid">
+                <div class="card-body">
+                    <h3 class="card-title">Project 1</h3>
+                    <p class="card-text">A project about Tokyo and all the tourist attractions people can visit.</p>
+                    <a href="https://mark-pan10.github.io/cloud_technology/project1/project1.html" target="_blank" rel="noopener noreferrer" class="card-link btn btn-primary m-3 stretched-link">View Page</a>
+                </div>
+            </div>
+            <div class="col-lg-2 col-sm-8 card m-3" style="height: 27rem; width: 420px;">
+                <img src="images/Elements.png" class="card-img-top img-fluid">
+                <div class="card-body">
+                    <h3 class="card-title">Project 2</h3>
+                    <p class="card-text">A project made to sell Most of the elements of the periodic table.</p>
+                    <a href="https://mark-pan10.github.io/cloud_technology/project2/project2.html" target="_blank" rel="noopener noreferrer" class="card-link btn btn-primary m-3 stretched-link">View Page</a>
+                </div>
+            </div>
+        </div>
     </body>
+    <footer class="row align-items-center justify-content-center bg-warning" id="Contacts">
+        <div class="col-lg-5 col-md-5 col-sm-10 text-primary">
+            <h3 class="text-center pb-3 mt-3">Contact Me</h3>
+            <ul style="padding-left: 5em; list-style-type: none;">
+                <li><img src="images/place.svg" class="ic"><span><p class="foot">Place St. Nice NY 12345</p></span></li>
+                <li><img src="images/phone.svg" class="ic"><p class="foot">+1 (123) 456-7890</p></li>
+                <li><img src="images/mail.svg" class="ic"><p class="foot">mark.pan10@student.qcc.cuny.edu</p></li>
+            </ul>
+        </div>
+        <div class="col-lg-5 col-md-5 col-sm-10 text-primary">
+            <h3 class="text-center pb-3 mt-3">Quick Links</h3>
+            <ul  class="ms-1" style="padding-left: 5em; list-style-type: none;">
+                <li><a href="project3.html" class="footli">Home</a></li>
+                <li><a href="skills.html" class="footli">Skills</a></li>
+                <li><a href="#hobbies" class="footli">Hobbies</a></li>
+                <li><a href="projects.html" class="footli">Projects</a></li>
+                <li><a href="academics.html" class="footli">Academics</a></li>
+            </ul>
+        </div>
+        <h6 class="bg-danger text-center text-warning p-1">@This webpage was made only for educational purposes.</h6>
+    </footer>
 </html>
